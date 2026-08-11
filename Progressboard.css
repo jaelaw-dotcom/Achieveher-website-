@@ -1,0 +1,154 @@
+
+
+
+
+
+
+/* --- Base Styles & Reset --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f0e6f7;
+  color: #4a2840;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --- Header Styling --- */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #b52a8c;
+  margin-bottom: 0.2rem;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #7b4f72;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1rem;
+  color: #9c7393;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+/* --- Legend Section --- */
+.legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(181, 42, 140, 0.05);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --- Table Container & Element --- */
+.table-wrap {
+  width: 100%;
+  max-width: 850px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow-x: auto;
+  box-shadow: 0 8px 24px rgba(74, 40, 64, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 1rem 1.2rem;
+}
+
+thead {
+  background-color: #ffd3ec;
+}
+
+th {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #a03c78;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f5edf7;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #faf4fc;
+}
+
+/* --- Specific Column Styling --- */
+.name-col {
+  font-weight: 600;
+  color: #5c3553;
+}
+
+.name-col small {
+  font-weight: 500;
+  color: #7b4f72;
+}
+
+.center-col {
+  text-align: center;
+}
+
+.score {
+  font-weight: 700;
+  color: #b52a8c;
+}
+
+/* --- Status Indicator Dots --- */
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.dot.done {
+  background-color: #d65ca8;
+  box-shadow: 0 0 8px rgba(214, 92, 168, 0.4);
+}
+
+.dot.missed {
+  background-color: #c9a9be;
+}
